@@ -307,7 +307,7 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0730;
 			};
 			buildConfigurationList = CE6A9A9408AC841300D0C1EE /* Build configuration list for PBXProject "HipArthroplastyTemplating" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -431,13 +431,14 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 		711481F51AC5680100DB7108 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -470,6 +471,7 @@
 					dynamic_lookup,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osirix.hiparthroplastytemplating;
 				PRODUCT_NAME = HipArthroplastyTemplating;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -485,6 +487,7 @@
 		CE6A9A9108AC841300D0C1EE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -517,6 +520,7 @@
 					dynamic_lookup,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osirix.hiparthroplastytemplating;
 				PRODUCT_NAME = HipArthroplastyTemplating;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -537,7 +541,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 			};
 			name = Development;
 		};

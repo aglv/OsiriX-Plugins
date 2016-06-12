@@ -219,8 +219,8 @@ static NSString* PreventNullString(NSString* s) {
             self.name = [NSString stringWithFormat:@"Preparing disc data for %@", image.series.study.name];
             
             self.status = @"Detecting image series and studies...";
-            NSMutableArray* series = [[NSMutableArray alloc] init];
-            NSMutableArray* studies = [[NSMutableArray alloc] init];
+            NSMutableArray* series = [[[NSMutableArray alloc] init] autorelease];
+            NSMutableArray* studies = [[[NSMutableArray alloc] init] autorelease];
             for (DicomImage* image in images)
             {
                 if( image.series && ![series containsObject:image.series])
@@ -402,14 +402,11 @@ static NSString* PreventNullString(NSString* s) {
                     return;
                 }
             }  
-        }
-        @catch (NSException *e) {
-            N2LogExceptionWithStackTrace(e);
-        }
-        NSMutableDictionary* seriesSizes = [[NSMutableDictionary alloc] initWithCapacity:series.count];
-        NSMutableDictionary* seriesPaths = [[NSMutableDictionary alloc] initWithCapacity:series.count];
-        NSUInteger processedImagesCount = 0;
-        @try {
+
+            NSMutableDictionary* seriesSizes = [[NSMutableDictionary alloc] initWithCapacity:series.count];
+            NSMutableDictionary* seriesPaths = [[NSMutableDictionary alloc] initWithCapacity:series.count];
+            NSUInteger processedImagesCount = 0;
+
             for (DicomSeries* serie in series)
             {
                 @try

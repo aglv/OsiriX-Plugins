@@ -6,31 +6,31 @@
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>HipArthroplastyTemplating</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>© 2004-2015 OsiriX Team</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
 	<key>CFBundleShortVersionString</key>
 	<string>2.6</string>
-	<key>NSPrincipalClass</key>
-	<string>ArthroplastyTemplatingPlugin</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
 	<key>MenuTitles</key>
 	<array>
 		<string>Hip Templating</string>
 	</array>
-	<key>pluginType</key>
-	<string>roiTool</string>
-	<key>allowToolbarIcon</key>
-	<string>YES</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>© 2004-2015 OsiriX Team</string>
+	<key>NSPrincipalClass</key>
+	<string>ArthroplastyTemplatingPlugin</string>
 	<key>ToolbarIcon</key>
 	<string>HipArthroplastyTemplating</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.osirix.hiparthroplastytemplating</string>
+	<key>allowToolbarIcon</key>
+	<string>YES</string>
+	<key>pluginType</key>
+	<string>roiTool</string>
 </dict>
 </plist>

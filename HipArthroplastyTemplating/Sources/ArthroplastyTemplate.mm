@@ -79,7 +79,7 @@
 }
 
 -(CGFloat)rotation { // in RADS
-	[NSException raise:NSInternalInconsistencyException format:@"[ArthroplastyTemplate scale] must be implemented"];
+	[NSException raise:NSInternalInconsistencyException format:@"[ArthroplastyTemplate rotation] must be implemented"];
 	return 0;
 }
 

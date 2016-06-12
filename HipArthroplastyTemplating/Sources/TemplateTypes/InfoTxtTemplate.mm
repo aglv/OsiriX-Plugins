@@ -8,8 +8,11 @@
 
 #import "InfoTxtTemplate.h"
 #import "ArthroplastyTemplateFamily.h"
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 #import <OsiriXAPI/NSString+N2.h>
 #import <OsiriXAPI/N2Operators.h>
+#pragma clang diagnostic pop
 
 @implementation InfoTxtTemplate
 
@@ -210,7 +213,8 @@ static id First(id a, id b) {
 }
 
 -(CGFloat)scale {
-	return 1;
+    NSString *scale = [_properties objectForKey:@"SCALE"];
+    return scale.length? [scale floatValue] : 1;
 }
 
 -(CGFloat)rotation {

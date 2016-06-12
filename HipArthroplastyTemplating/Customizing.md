@@ -25,7 +25,7 @@ TXT files contain values for:
 * **SIZE**: a number
 * **PRODUCT_GROUP** values: *Hip*, ... (only displayed)
 * **COMPONENT_TYPE**: *Cup*, *Stem*, ...
-* **FIXATION_TYPE** values: *Cemented*, *Uncemented*
+* **FIXATION_TYPE** values: *Cemented*, *Uncemented*, *Cementless*
 * **MODULARITY_INFO** values: *Modular*, *Monobloc* (only displayed)
 * **TYPE_OF_SURGERY** values: *Primary*, ... (only displayed)
 * **PDF_FILE_AP** and, optionally, **PDF_FILE_ML**: name of the PDF file representing the implant, in the same directory as the TXT file, including the file extension and matching capitalization
@@ -38,7 +38,7 @@ for stems), in millimeters from the bottom-left corner of the PDF
 * **AP_HEAD_ROTATION_POINT_1_X**, **AP_HEAD_ROTATION_POINT_1_Y** ... **AP_HEAD_ROTATION_POINT_6_X**, **AP_HEAD_ROTATION_POINT_6_Y**: coordinates of the rotation points (fixed points common between stem and cup) in millimeters from the described *ORIGIN* point (1 is interpreted as *XS*, 2 is *S*, then *M*, *L*, *XL* and *XXL*)
 
 
-Additional values can be inserted and will be ignored: PART_INFO, NECK_ANGLE, OFFSET, CONE, CHANGE_TYPE, CHANGE_INFO, REPLACED_REF_NO, NOT_FOR_SALE_IN_TERRITORIES, DB_PART_NO, DB_PART_REV, TEMPLATE_GROUP, INFO_FILE, ...
+Additional values can be inserted and will be ignored: PART_INFO, COMBINATION_INFO, COMBINATION_INFO_2, NECK_ANGLE, OFFSET, CONE, CHANGE_TYPE, CHANGE_INFO, REPLACED_REF_NO, NOT_FOR_SALE_IN_TERRITORIES, DB_PART_NO, DB_PART_REV, TEMPLATE_GROUP, INFO_FILE, SPECIFICATION_NAME, ...
 
 ## Rectangle of Interest
 

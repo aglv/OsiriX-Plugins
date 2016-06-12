@@ -6,8 +6,11 @@
 
 #import "ArthroplastyTemplatingTableView.h"
 #import "ArthroplastyTemplatingWindowController+Templates.h"
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 #import <OsiriXAPI/NSImage+N2.h>
 #import <OsiriXAPI/N2Operators.h>
+#pragma clang diagnostic pop
 
 @implementation ArthroplastyTemplatingTableView
 

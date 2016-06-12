@@ -7,17 +7,22 @@
 
 #import "ArthroplastyTemplatingWindowController.h"
 #import "ArthroplastyTemplatingStepsController.h"
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 #import <OsiriXAPI/BrowserController.h>
 #import <OsiriXAPI/ViewerController.h>
 #import <OsiriXAPI/ROI.h>
 #import <OsiriXAPI/DCMView.h>
 #import <OsiriXAPI/NSImage+N2.h>
 #import <OsiriXAPI/N2Operators.h>
+#import <OsiriXAPI/Notifications.h>
+#pragma clang diagnostic pop
+
 #import "ArthroplastyTemplateFamily.h"
 #import "ArthroplastyTemplatingPlugin.h"
 #include <cmath>
 #include <algorithm>
-#include <OsiriXAPI/Notifications.h>
 #import "ArthroplastyTemplatingWindowController+Color.h"
 #import "ArthroplastyTemplatingWindowController+Templates.h"
 #import "ArthroplastyTemplatingWindowController+OsiriX.h"
@@ -224,6 +229,8 @@
 
 -(N2Image*)templateImage:(ArthroplastyTemplate*)templat entirePageSizePixels:(NSSize)size color:(NSColor*)color {
 	N2Image* image = [[N2Image alloc] initWithContentsOfFile:[templat pdfPathForDirection:_viewDirection]];
+//    image.size *= templat.scale;
+    
 	NSSize imageSize = [image size];
 	
 	// size.width OR size.height can be qual to zero, in which case the zero value is set corresponding to the available value

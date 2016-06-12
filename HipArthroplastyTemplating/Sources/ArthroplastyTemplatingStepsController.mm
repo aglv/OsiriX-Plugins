@@ -9,6 +9,9 @@
 #import "ArthroplastyTemplatingWindowController+Templates.h"
 #import "ArthroplastyTemplatingPlugin.h"
 #import "ArthroplastyTemplatingUserDefaults.h"
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 #import <OsiriXAPI/SendController.h>
 #import <OsiriXAPI/BrowserController.h>
 #import <OsiriXAPI/ViewerController.h>
@@ -24,9 +27,10 @@
 #import <OsiriXAPI/NSThread+N2.h>
 #import <OsiriXAPI/ThreadModalForWindowController.h>
 #import <OsiriXAPI/Notifications.h>
+#pragma clang diagnostic pop
+
 #import "ArthroplastyTemplateFamily.h"
 #import "HipAT2D.h"
-// #include "vImage/Convolution.h"
 #include <vector>
 
 #define kInvalidAngle 666

@@ -9,7 +9,11 @@
 #import "ArthroplastyTemplatingWindowController+Templates.h"
 #import "ArthroplastyTemplateFamily.h"
 #import "InfoTxtTemplate.h"
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 #import <OsiriXAPI/NSFileManager+N2.h>
+#pragma clang diagnostic pop
 
 @implementation ArthroplastyTemplatingWindowController (Templates)
 
